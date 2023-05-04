@@ -67,7 +67,7 @@ Please follow the below steps to run Pathfinder:
 
 
 ## 4. OUTPUT
-Output files of Pathfinder are stored in the ``"example/final_pdb/"`` folder, including five predicted models (seed_X.pdb).
+Output files of Pathfinder are stored in the ``"example/output_files/"`` folder, including self-adaptive predicted models (seed_X.pdb).
 
 	data
 	seed_1.pdb
