@@ -56,7 +56,7 @@ Pathfinder requires four files to generate models:
 
 ## 3. PARAMETER
 
-Some parameters of Pathfinder can be set in "tools/parameter". [See the paper for details](https://www.biorxiv.org/content/10.1101/2023.04.20.537604v1).
+Some parameters of Pathfinder can be set in "tools/parameter". [See the paper for details: Pathfinder: protein folding pathway prediction based on conformational sampling. Zhaohong Huang, Xinyue Cui, Yuhao Xia, Kailong Zhao, Guijun Zhang bioRxiv 2023.04.20.537604; doi https://doi.org/10.1101/2023.04.20.537604](https://www.biorxiv.org/content/10.1101/2023.04.20.537604v1).
 
 | Name                     | Default Value | Notes                                                     |
 | ------------------------ | ------------- | --------------------------------------------------------- |
