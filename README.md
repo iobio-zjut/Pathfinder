@@ -1,5 +1,5 @@
 # Pathfinder
-### **protein folding pathway prediction based on conformational sampling**
+### **Protein folding pathway prediction based on conformational sampling**
 
 
 
@@ -20,12 +20,11 @@ Binaries for Linux 64 bit system has been included in the package. The Linux bin
 
 Please Follow the below steps to install and configure Pathfinder:
 
-- Download Rosetta3.10 source package from https://www.rosettacommons.org/software/.
-(where `$ROSETTA3_stage1`=path-to-Rosetta)
+- Download Rosetta3.10 source package from https://www.rosettacommons.org/software/.(where `$ROSETTA3_stage1`=path-to-Rosetta)
 
 - Replicate the package (where `$ROSETTA3_stage2`=path-to-Rosetta_replocate), two Rosettas are used for stage 1 and stage 2 respectively.
 
-- Copy and paste "tools" and "flags" from "code/" folder in Pathfinder package to work directory.
+- Copy and paste "tools" and "flags" from "code/" folder in Pathfinder package to work directory.(where `$TOOL`=path-to-tools)
 
 - Copy and paste ``"ClassicAbinitio.cc"`` and ``"ClassicAbinitio.hh"`` from ``"code/stage1/"`` folder in Pathfinder package to ``"$ROSETTA3_stage1/main/source/src/protocols/abinitio/"`` folder in Rosetta.
 
@@ -59,14 +58,19 @@ Please follow the below steps to run Pathfinder:
 - Run Pathfinder with the following command:
 
 ```
+ $> cp $TOOL/tools ./tools
+ $> cp $TOOL/flags ./flags
  $> $ROSETTA3_stage1/main/source/bin/AbinitioRelax.default.linuxgccrelease @flags 
  $> $ROSETTA3_stage2/main/source/bin/AbinitioRelax.default.linuxgccrelease @flags 
 ```
 
 - Five models are generated in the ``"output_files/"`` folder.
 
+## 4. PARAMETERS
 
-## 4. OUTPUT
+
+
+## 5. OUTPUT
 Output files of Pathfinder are stored in the ``"example/output_files/"`` folder, including self-adaptive predicted models (seed_X.pdb).
 
 	data
